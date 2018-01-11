@@ -1,7 +1,7 @@
 from datetime import datetime
 from flask import Flask,render_template
 from flask_sqlalchemy import SQLALchemy
-app=Flaskk(__name__)
+app=Flask(__name__)
 app.config.update(dict(SECRET_KEY='very secret key',
     SQLALCHEMY_DATABASE_URI='mysql+mysqldb://root@localhost:3306/simpledu?charset=utf8'))
 db=SQLALchemy(app)
